@@ -1,5 +1,5 @@
 
-# Multiple
+# Mapping multiple JSON fields to a single Java field
 
 ## Run
 
