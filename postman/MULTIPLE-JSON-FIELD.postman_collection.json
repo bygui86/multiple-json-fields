@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "f39fe064-7a9e-4eec-9c23-6dcbf874561e",
+		"name": "MULTIPLE-JSON-FIELD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post jackson v1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"location\": \"London\",\n    \"temp\": 15,\n    \"weather\": \"Cloudy\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/jackson/weather",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"jackson",
+						"weather"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post jackson v2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"place\": \"Lisbon\",\n    \"temperature\": 35,\n    \"outlook\": \"Sunny\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/jackson/weather",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"jackson",
+						"weather"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post gson v1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"location\": \"London\",\n    \"temp\": 15,\n    \"weather\": \"Cloudy\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/gson/weather",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"gson",
+						"weather"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post gson v2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"place\": \"Lisbon\",\n    \"temperature\": 35,\n    \"outlook\": \"Sunny\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/gson/weather",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"gson",
+						"weather"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
